@@ -1,14 +1,8 @@
-﻿// Программа, которая на вход принимает три числа и выдает, какое число максимальное
-Console.Write($"Введите число a: \n");
+﻿// Программа, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)
+Console.Write($"Введите число: \n");
 int a = int.Parse(Console.ReadLine());
-Console.Write($"Введите число b: \n");
-int b = int.Parse(Console.ReadLine());
-Console.Write($"Введите число c: \n");
-int c = int.Parse(Console.ReadLine());
 
-if (a>b & a>c)
-    { Console.Write($"Число {a} максимальное");}
+if (a%2 == 0)
+    { Console.Write($"Число {a} чётное");}
 else
-    if (b>c) 
-    {Console.Write($"Число {b} максимальное");}
-    else   {Console.Write($"Число {c} максимальное");}
+    {Console.Write($"Число {a} нечётное");}

@@ -1,8 +1,9 @@
-﻿// Программа, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)
-Console.Write($"Введите число: \n");
-int a = int.Parse(Console.ReadLine());
-
-if (a%2 == 0)
-    { Console.Write($"Число {a} чётное");}
-else
-    {Console.Write($"Число {a} нечётное");}
+﻿// Программа, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N
+Console.Write($"Введите число N: \n");
+int N = int.Parse(Console.ReadLine());
+int index;
+index = 1;
+while (index <= N)
+    {if (index%2 == 0)
+    { Console.Write($" {index} ");}
+    index = index + 1;}

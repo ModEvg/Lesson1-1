@@ -5,6 +5,6 @@ Console.Write($"Введите число b: \n");
 int b = int.Parse(Console.ReadLine());
 
 if (a>b) {
-    Console.Write($"Число {a}");}
+    Console.Write($"Число {a} наибольшее, число {b} наименьшее");}
 else {
-   Console.Write($"Число {b} больше\n");}
+   Console.Write($"Число {b} наибольшее, число {a} наименьшее");}
